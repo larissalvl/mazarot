@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://hv24mqp431yn"]
+
+[ext_resource type="Script" uid="uid://orbyhkptxjms" path="res://scripts/vida.gd" id="1_t2nme"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2cj7"]
+bg_color = Color(0.45882353, 0.9137255, 0.9843137, 0.44705883)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bg7oi"]
+bg_color = Color(0.45882353, 0.9137255, 0.9843137, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="vidaHUD" type="CanvasLayer" unique_id=573314424]
+layer = 10
+script = ExtResource("1_t2nme")
+
+[node name="barraVida" type="ProgressBar" parent="." unique_id=1862662713]
+custom_minimum_size = Vector2(300, 30)
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 320.0
+offset_bottom = 50.0
+theme_override_styles/background = SubResource("StyleBoxFlat_i2cj7")
+theme_override_styles/fill = SubResource("StyleBoxFlat_bg7oi")
+value = 100.0
+show_percentage = false

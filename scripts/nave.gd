@@ -7,8 +7,8 @@ var vel_angular_atual = vel_angular_base
 
 var vida_maxima := 1000.0
 var vida_atual := vida_maxima
-
 var vivo := true
+signal vida_mudou
 
 func _ready():
 	var sprite = $AnimatedSprite2D
@@ -38,6 +38,7 @@ func receber_dano(dano):
 		return
 	vida_atual -= dano
 	vida_atual = max(vida_atual, 0)
+	vida_mudou.emit()
 	if vida_atual <= 0:
 		morrer()
 		vivo = false

@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://d1krcvbi30bie" path="res://cenas/nave.tscn" id="17_yvdtj"]
 [ext_resource type="PackedScene" uid="uid://c1ej2yb2icocw" path="res://cenas/sol.tscn" id="21_bg7oi"]
 [ext_resource type="PackedScene" uid="uid://b3h8jm6rrlj43" path="res://cenas/minimapa.tscn" id="21_qmcej"]
+[ext_resource type="PackedScene" uid="uid://hv24mqp431yn" path="res://cenas/vida.tscn" id="22_54c3l"]
 
 [node name="jogo" type="Node2D" unique_id=2069730291]
 
@@ -90,7 +91,10 @@ scale = Vector2(1.3, 1.3)
 [node name="Camera2D" type="Camera2D" parent="Ship" unique_id=2041869731]
 position_smoothing_enabled = true
 
-[node name="HUD" parent="." unique_id=1622000054 instance=ExtResource("21_qmcej")]
+[node name="mapaHUD" parent="." unique_id=1622000054 instance=ExtResource("21_qmcej")]
+layer = 10
 
 [node name="sol" parent="." unique_id=1533556478 instance=ExtResource("21_bg7oi")]
 position = Vector2(-9000, 0)
+
+[node name="vidaHUD" parent="." unique_id=573314424 instance=ExtResource("22_54c3l")]
