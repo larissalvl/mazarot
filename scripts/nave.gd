@@ -45,3 +45,4 @@ func receber_dano(dano):
 	
 func morrer():
 	print("A nave morreu")
+	get_tree().reload_current_scene()
