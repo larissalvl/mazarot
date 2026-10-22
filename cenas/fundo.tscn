@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dgmgdpct80vqn" path="res://cenas/estrela.tscn" id="2_wnyi8"]
 
 [node name="fundo" type="Parallax2D" unique_id=1729519060]
+process_mode = 3
 script = ExtResource("1_rq0oe")
 
 [node name="estrela" parent="." unique_id=546650578 instance=ExtResource("2_wnyi8")]

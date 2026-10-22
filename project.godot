@@ -14,6 +14,10 @@ config/name="Mazarot"
 run/main_scene="uid://xkay6drucxv6"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
+[autoload]
+
+EstadoJogo="*uid://s23iuu81sond"
+
 [display]
 
 window/size/mode=3

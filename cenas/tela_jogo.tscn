@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bfjatdruetlo8"]
 
+[ext_resource type="Script" uid="uid://brkl0i7elmwkj" path="res://scripts/tela_jogo.gd" id="1_6rfgq"]
 [ext_resource type="PackedScene" uid="uid://cvpxexmwnwpjf" path="res://cenas/fundo.tscn" id="1_h5v22"]
 [ext_resource type="Texture2D" uid="uid://dvsctfwtb5g21" path="res://planetas/sprites/Terra.png" id="3_qmcej"]
 [ext_resource type="Script" uid="uid://c71oduiq8uojd" path="res://scripts/planetas.gd" id="4_fpkt3"]
@@ -24,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://hv24mqp431yn" path="res://cenas/vida.tscn" id="22_54c3l"]
 
 [node name="jogo" type="Node2D" unique_id=2069730291]
+script = ExtResource("1_6rfgq")
 
 [node name="fundo" parent="." unique_id=1729519060 instance=ExtResource("1_h5v22")]
 
