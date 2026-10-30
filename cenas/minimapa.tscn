@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b3h8jm6rrlj43"]
 
 [ext_resource type="Script" uid="uid://d2xd014tkqm4d" path="res://scripts/mini_map.gd" id="1_lcx2b"]
-[ext_resource type="Texture2D" uid="uid://v7qen5qxqwu6" path="res://naveSprites/NaveMinimapa.png" id="2_g3773"]
+[ext_resource type="Texture2D" uid="uid://v7qen5qxqwu6" path="res://sprites/MiniMapa/NaveMiniMapa/NaveMinimapa.png" id="2_g3773"]
 
 [node name="HUD" type="CanvasLayer" unique_id=1622000054]
 

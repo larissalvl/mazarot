@@ -1,37 +1,330 @@
 [gd_scene format=3 uid="uid://d1krcvbi30bie"]
 
 [ext_resource type="Script" uid="uid://xdxei8ob88fq" path="res://scripts/nave.gd" id="1_env2g"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_env2g"]
-load_path = "res://.godot/imported/Nave_0.png-cea80f17a490db56b183aaa6272a03a1.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ralch"]
-load_path = "res://.godot/imported/Nave_1.png-7106e44d5d8735d26df4d1da89456208.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_avxe3"]
-load_path = "res://.godot/imported/Nave_2.png-e7d813c5bb0bde10500b85b0f8fb3d14.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pb48a"]
-load_path = "res://.godot/imported/Nave_3.png-21166add9c25ceb578ac7e4e9beb6724.ctex"
+[ext_resource type="Texture2D" uid="uid://c4w1gm1n2j6im" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_0.png" id="2_msymg"]
+[ext_resource type="Texture2D" uid="uid://cps6pt0rdid0m" path="res://sprites/TamanhoTela/NaveSprites/Propulsores/FogoNormal/NaveFogo_0.png" id="3_6lrj1"]
+[ext_resource type="Texture2D" uid="uid://b7n3tp1akee5w" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_1.png" id="3_bwnov"]
+[ext_resource type="Texture2D" uid="uid://mcwqfqtt8im5" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_2.png" id="4_6lrj1"]
+[ext_resource type="Texture2D" uid="uid://c5twoq4tmfp76" path="res://sprites/TamanhoTela/NaveSprites/Propulsores/FogoNormal/NaveFogo_1.png" id="4_554lw"]
+[ext_resource type="Texture2D" uid="uid://byb0xu8et658b" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_3.png" id="5_554lw"]
+[ext_resource type="Texture2D" uid="uid://du4ht2s7e7hml" path="res://sprites/TamanhoTela/NaveSprites/Propulsores/FogoNormal/NaveFogo_2.png" id="5_642hx"]
+[ext_resource type="Texture2D" uid="uid://bfh52wigkeie2" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_4.png" id="6_642hx"]
+[ext_resource type="Texture2D" uid="uid://c41v0c05f1uav" path="res://sprites/TamanhoTela/NaveSprites/Propulsores/FogoNormal/NaveFogo_3.png" id="6_bbg2d"]
+[ext_resource type="Texture2D" uid="uid://c7ng73238q5r" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_5.png" id="7_bbg2d"]
+[ext_resource type="Texture2D" uid="uid://rcmce3n0irrg" path="res://sprites/TamanhoTela/NaveSprites/Propulsores/FogoRapido/FogoRapido_0.png" id="7_tyv7n"]
+[ext_resource type="Texture2D" uid="uid://7ic5p2vuv71b" path="res://sprites/TamanhoTela/NaveSprites/Propulsores/FogoRapido/FogoRapido_1.png" id="8_2h6fi"]
+[ext_resource type="Texture2D" uid="uid://d01ioc7b4g4ue" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_6.png" id="8_tyv7n"]
+[ext_resource type="Texture2D" uid="uid://bc5a2vol8rorn" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_7.png" id="9_2h6fi"]
+[ext_resource type="Texture2D" uid="uid://gpp7eooiyhp8" path="res://sprites/TamanhoTela/NaveSprites/Propulsores/FogoRapido/FogoRapido_2.png" id="9_jvmwv"]
+[ext_resource type="Texture2D" uid="uid://rdq3htuk7na7" path="res://sprites/TamanhoTela/NaveSprites/Propulsores/FogoRapido/FogoRapido_4.png" id="10_hgjk0"]
+[ext_resource type="Texture2D" uid="uid://cyj56v8to3hhw" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_8.png" id="10_jvmwv"]
+[ext_resource type="Texture2D" uid="uid://b7bbe0q8ykgiy" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_9.png" id="11_hgjk0"]
+[ext_resource type="Texture2D" uid="uid://dnd8odou7i355" path="res://sprites/TamanhoTela/NaveSprites/Propulsores/FogoRapido/FogoRapido_5.png" id="11_wf2uy"]
+[ext_resource type="Texture2D" uid="uid://de4ymcjrvmlna" path="res://sprites/TamanhoTela/NaveSprites/Propulsores/FogoRapido/FogoRapido_6.png" id="12_5jjtn"]
+[ext_resource type="Texture2D" uid="uid://bam85683clwba" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_10.png" id="12_wf2uy"]
+[ext_resource type="Texture2D" uid="uid://ddv22j53kqw34" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_11.png" id="13_5jjtn"]
+[ext_resource type="Texture2D" uid="uid://c06nqjjviuqk3" path="res://sprites/TamanhoTela/NaveSprites/Propulsores/FogoRapido/FogoRapido_7.png" id="13_nlwyv"]
+[ext_resource type="Texture2D" uid="uid://bu76a5m8k1cln" path="res://sprites/TamanhoTela/NaveSprites/Propulsores/FogoRapido/FogoRapido_8.png" id="14_coplp"]
+[ext_resource type="Texture2D" uid="uid://clot2ys372d2a" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_12.png" id="14_nlwyv"]
+[ext_resource type="Texture2D" uid="uid://bn3p5yrsnr4ii" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_13.png" id="15_coplp"]
+[ext_resource type="Texture2D" uid="uid://bs2e5uhfhg2s" path="res://sprites/TamanhoTela/NaveSprites/Propulsores/FogoRapido/FogoRapido_9.png" id="15_nsk1n"]
+[ext_resource type="Texture2D" uid="uid://dehvfu8ap0uyu" path="res://sprites/TamanhoTela/NaveSprites/Propulsores/FogoRapido/FogoRapido_10.png" id="16_kekn6"]
+[ext_resource type="Texture2D" uid="uid://c6bgvnitmh2sm" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_14.png" id="16_nsk1n"]
+[ext_resource type="Texture2D" uid="uid://cfdwcdxir6clw" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_15.png" id="17_kekn6"]
+[ext_resource type="Texture2D" uid="uid://benjb0ht7ch1w" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_16.png" id="18_tkimw"]
+[ext_resource type="Texture2D" uid="uid://dfopvagxg8qmg" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_17.png" id="19_rk1ru"]
+[ext_resource type="Texture2D" uid="uid://djqyl8i1h2gdv" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_18.png" id="20_mvklo"]
+[ext_resource type="Texture2D" uid="uid://bhxjo4lbsrqic" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_19.png" id="21_r30ou"]
+[ext_resource type="Texture2D" uid="uid://dxl1tsl66qmdl" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_20.png" id="22_2ko7q"]
+[ext_resource type="Texture2D" uid="uid://cmq4q7jfaua4j" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_21.png" id="23_bou7i"]
+[ext_resource type="Texture2D" uid="uid://devfse1lo1ph5" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_22.png" id="24_7kgk7"]
+[ext_resource type="Texture2D" uid="uid://ur8lncya7ake" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_23.png" id="25_i8heh"]
+[ext_resource type="Texture2D" uid="uid://drhtquexbwos4" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_24.png" id="26_5pfsm"]
+[ext_resource type="Texture2D" uid="uid://ndh46de2cmjj" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_25.png" id="27_polbt"]
+[ext_resource type="Texture2D" uid="uid://db0jxxy1neili" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_26.png" id="28_ys0ny"]
+[ext_resource type="Texture2D" uid="uid://hyjaafc1rctx" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_27.png" id="29_xlio4"]
+[ext_resource type="Texture2D" uid="uid://bsr64gghlrbua" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_28.png" id="30_ldnxr"]
+[ext_resource type="Texture2D" uid="uid://vbwi3xb8fnfx" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_29.png" id="31_s0t6q"]
+[ext_resource type="Texture2D" uid="uid://dyrr1qer5yupq" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_30.png" id="32_4pdvr"]
+[ext_resource type="Texture2D" uid="uid://co2saix2ju7gl" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_31.png" id="33_g7xdw"]
+[ext_resource type="Texture2D" uid="uid://b31dpa5ovnkxb" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_32.png" id="34_6napl"]
+[ext_resource type="Texture2D" uid="uid://bpvxuk8otptdd" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_33.png" id="35_4ke7e"]
+[ext_resource type="Texture2D" uid="uid://b0y8l5g8hlssv" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_34.png" id="36_sbb4m"]
+[ext_resource type="Texture2D" uid="uid://ckyswmruswm3x" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_35.png" id="37_dfrt7"]
+[ext_resource type="Texture2D" uid="uid://df4lgw6gqdok8" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_36.png" id="38_ue2bh"]
+[ext_resource type="Texture2D" uid="uid://cdyk4rkdmf315" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_37.png" id="39_3wjd2"]
+[ext_resource type="Texture2D" uid="uid://c5uay3bmxeb3e" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_38.png" id="40_bk56l"]
+[ext_resource type="Texture2D" uid="uid://b4x4u13wlc3tf" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_39.png" id="41_mm8x5"]
+[ext_resource type="Texture2D" uid="uid://dluw5y7b34g8f" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_40.png" id="42_v21sp"]
+[ext_resource type="Texture2D" uid="uid://d3lp2paymb48b" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_41.png" id="43_jkcfc"]
+[ext_resource type="Texture2D" uid="uid://dpr40s2rkbls8" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_42.png" id="44_nu34d"]
+[ext_resource type="Texture2D" uid="uid://chpg4ux5bwwx8" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_43.png" id="45_0r1of"]
+[ext_resource type="Texture2D" uid="uid://csjawsmig6raf" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_44.png" id="46_kho2e"]
+[ext_resource type="Texture2D" uid="uid://0fa2cqbr3vbu" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_45.png" id="47_i0886"]
+[ext_resource type="Texture2D" uid="uid://bjoyhxgjnia68" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_46.png" id="48_rru17"]
+[ext_resource type="Texture2D" uid="uid://ddn36p2cghb5b" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_47.png" id="49_m7c6m"]
+[ext_resource type="Texture2D" uid="uid://c4m8qns1bm2bq" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_48.png" id="50_goiks"]
+[ext_resource type="Texture2D" uid="uid://cnfsct0asyj3e" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_49.png" id="51_sk0o4"]
+[ext_resource type="Texture2D" uid="uid://b1y22pcnnnedc" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_50.png" id="52_t8r2p"]
+[ext_resource type="Texture2D" uid="uid://b1o4pjrgrfmyq" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_51.png" id="53_hn3kg"]
+[ext_resource type="Texture2D" uid="uid://bq5lx4hun4xux" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_52.png" id="54_2pvd5"]
+[ext_resource type="Texture2D" uid="uid://dblvabxjwfp2g" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_53.png" id="55_ogfpl"]
+[ext_resource type="Texture2D" uid="uid://e44vciewvajj" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_54.png" id="56_f0tq1"]
+[ext_resource type="Texture2D" uid="uid://chob775y2fee7" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_55.png" id="57_di76m"]
+[ext_resource type="Texture2D" uid="uid://cqqa130raqvjx" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_56.png" id="58_8x7gq"]
+[ext_resource type="Texture2D" uid="uid://cxtpse1aqjveg" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_57.png" id="59_4u41a"]
+[ext_resource type="Texture2D" uid="uid://n7p2ve4xqup" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_58.png" id="60_0lf2l"]
+[ext_resource type="Texture2D" uid="uid://bjaktk33n1fjf" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_59.png" id="61_apdud"]
+[ext_resource type="Texture2D" uid="uid://b3wau3ykrjmpw" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_60.png" id="62_1to5e"]
+[ext_resource type="Texture2D" uid="uid://cufomg3xnp6ku" path="res://sprites/TamanhoTela/NaveSprites/Nave/NaveArmada_61.png" id="63_f0oci"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gxb6x"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_env2g")
+"texture": ExtResource("3_6lrj1")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ralch")
+"texture": ExtResource("4_554lw")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_avxe3")
+"texture": ExtResource("5_642hx")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_pb48a")
+"texture": ExtResource("6_bbg2d")
 }],
 "loop": 1,
-"name": &"nave",
+"name": &"FogoNormal",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_tyv7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2h6fi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jvmwv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_hgjk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_wf2uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_5jjtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_nlwyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_coplp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_nsk1n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_kekn6")
+}],
+"loop": 1,
+"name": &"FogoRapido",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_es2mj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_msymg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bwnov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6lrj1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_554lw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_642hx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_bbg2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_tyv7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_2h6fi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jvmwv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_hgjk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wf2uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_5jjtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_nlwyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_coplp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_nsk1n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_kekn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tkimw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_rk1ru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_mvklo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_r30ou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_2ko7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_bou7i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_7kgk7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_i8heh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_5pfsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_polbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ys0ny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_xlio4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ldnxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_s0t6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_4pdvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_g7xdw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_6napl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_4ke7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_sbb4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_dfrt7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ue2bh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_3wjd2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_bk56l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_mm8x5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_v21sp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_jkcfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_nu34d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_0r1of")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_kho2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_i0886")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_rru17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_m7c6m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_goiks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_sk0o4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_t8r2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_hn3kg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_2pvd5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_ogfpl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_f0tq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_di76m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_8x7gq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_4u41a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_0lf2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_apdud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_1to5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_f0oci")
+}],
+"loop": 0,
+"name": &"NaveArmada",
+"speed": 15.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ltewx"]
@@ -42,13 +335,18 @@ position = Vector2(387, 188)
 script = ExtResource("1_env2g")
 metadata/_edit_group_ = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1231320679]
-position = Vector2(0.2000122, -0.80000305)
+[node name="SpriteFogo" type="AnimatedSprite2D" parent="." unique_id=1231320679]
+position = Vector2(0.2000122, -0.7999878)
 scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_gxb6x")
-animation = &"nave"
-autoplay = "nave"
-frame_progress = 0.9821299
+animation = &"FogoRapido"
+autoplay = "FogoNormal"
+
+[node name="SpriteNave" type="AnimatedSprite2D" parent="." unique_id=366075558]
+position = Vector2(0.2, -0.8)
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_es2mj")
+animation = &"NaveArmada"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1492638287]
 position = Vector2(0.99998856, -2)
