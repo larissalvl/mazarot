@@ -1,10 +1,10 @@
 extends Parallax2D
 
 const MOLDE_ESTRELA: PackedScene = preload("res://cenas/estrela.tscn")
+var espaco = 2000
 
 
 func _ready():
-	var espaco = 2000
 	for i in range(200):
 		var estrela = MOLDE_ESTRELA.instantiate()
 		add_child(estrela)

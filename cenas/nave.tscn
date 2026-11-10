@@ -337,17 +337,18 @@ metadata/_edit_group_ = true
 
 [node name="SpriteFogo" type="AnimatedSprite2D" parent="." unique_id=1231320679]
 position = Vector2(0.2000122, -0.7999878)
-scale = Vector2(0.3, 0.3)
+scale = Vector2(0.4, 0.4)
 sprite_frames = SubResource("SpriteFrames_gxb6x")
-animation = &"FogoRapido"
+animation = &"FogoNormal"
 autoplay = "FogoNormal"
 
 [node name="SpriteNave" type="AnimatedSprite2D" parent="." unique_id=366075558]
 position = Vector2(0.2, -0.8)
-scale = Vector2(0.3, 0.3)
+scale = Vector2(0.4, 0.4)
 sprite_frames = SubResource("SpriteFrames_es2mj")
 animation = &"NaveArmada"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1492638287]
 position = Vector2(0.99998856, -2)
+scale = Vector2(1.5, 1.5)
 shape = SubResource("CircleShape2D_ltewx")

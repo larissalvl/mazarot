@@ -96,7 +96,13 @@ position_smoothing_enabled = true
 [node name="mapaHUD" parent="." unique_id=1622000054 instance=ExtResource("21_qmcej")]
 layer = 10
 
-[node name="sol" parent="." unique_id=1533556478 instance=ExtResource("21_bg7oi")]
-position = Vector2(-9000, 0)
+[node name="sol" parent="." unique_id=1533556478 groups=["sol"] instance=ExtResource("21_bg7oi")]
+position = Vector2(-9122, -89)
 
 [node name="vidaHUD" parent="." unique_id=573314424 instance=ExtResource("22_54c3l")]
+
+[node name="Timer" type="Timer" parent="." unique_id=393277726]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

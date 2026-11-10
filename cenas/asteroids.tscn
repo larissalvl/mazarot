@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://c0gp11ghoa8qu"]
+
+[ext_resource type="Script" uid="uid://c757mb2i1cg6g" path="res://scripts/asteroids.gd" id="1_vr3dk"]
+[ext_resource type="Texture2D" uid="uid://baucsnb11lv1l" path="res://sprites/TamanhoTela/Asteroids/asteroid_rocha_1.png" id="5_qi1la"]
+[ext_resource type="Texture2D" uid="uid://csqj3r2q365dd" path="res://sprites/TamanhoTela/Asteroids/asteroid_rocha_2.png" id="6_5h54p"]
+[ext_resource type="Texture2D" uid="uid://cjd6d1tiw8yqu" path="res://sprites/TamanhoTela/Asteroids/asteroid_rocha_3.png" id="7_fpqlr"]
+[ext_resource type="Texture2D" uid="uid://bsut0t1cmi04m" path="res://sprites/TamanhoTela/Asteroids/asteroid_rocha_4.png" id="8_xob7p"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gxb6x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_qi1la")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5h54p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fpqlr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xob7p")
+}],
+"loop": 0,
+"name": &"Asteroid",
+"speed": 1.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_es2mj"]
+radius = 117.15375
+
+[node name="Asteroids" type="Area2D" unique_id=1586754981]
+script = ExtResource("1_vr3dk")
+metadata/_edit_group_ = true
+
+[node name="SpritesAsteroids" type="AnimatedSprite2D" parent="." unique_id=328167398]
+sprite_frames = SubResource("SpriteFrames_gxb6x")
+animation = &"Asteroid"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1137837124]
+shape = SubResource("CircleShape2D_es2mj")
