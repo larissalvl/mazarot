@@ -3,7 +3,13 @@
 [ext_resource type="Script" uid="uid://orbyhkptxjms" path="res://scripts/vida.gd" id="1_t2nme"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2cj7"]
-bg_color = Color(0.45882353, 0.9137255, 0.9843137, 0.44705883)
+bg_color = Color(0.45882353, 0.9137255, 0.9843137, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(15.30028, 15.30028, 15.30028, 1)
+border_blend = true
 corner_radius_top_left = 6
 corner_radius_top_right = 6
 corner_radius_bottom_right = 6
@@ -11,6 +17,10 @@ corner_radius_bottom_left = 6
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bg7oi"]
 bg_color = Color(0.45882353, 0.9137255, 0.9843137, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_bottom = 3
+border_blend = true
 corner_radius_top_left = 6
 corner_radius_top_right = 6
 corner_radius_bottom_right = 6

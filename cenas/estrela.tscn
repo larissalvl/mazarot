@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dgmgdpct80vqn"]
 
-[ext_resource type="Texture2D" uid="uid://y85m2xaxhibj" path="res://estrelasSprites/estrela_1.PNG" id="1_vi0uh"]
-[ext_resource type="Texture2D" uid="uid://d11yffr0n7lmj" path="res://estrelasSprites/estrela_2.PNG" id="2_ubv88"]
-[ext_resource type="Texture2D" uid="uid://duyhp4h5f47lp" path="res://estrelasSprites/estrela_3.PNG" id="3_f4o8n"]
-[ext_resource type="Texture2D" uid="uid://by2s1gdqgsty" path="res://estrelasSprites/estrela_4.PNG" id="4_y18x1"]
-[ext_resource type="Texture2D" uid="uid://rd24x3yn3brv" path="res://estrelasSprites/estrela_5.PNG" id="5_vt15n"]
+[ext_resource type="Texture2D" uid="uid://y85m2xaxhibj" path="res://sprites/TamanhoTela/estrelasSprites/estrela_1.PNG" id="1_vi0uh"]
+[ext_resource type="Texture2D" uid="uid://d11yffr0n7lmj" path="res://sprites/TamanhoTela/estrelasSprites/estrela_2.PNG" id="2_ubv88"]
+[ext_resource type="Texture2D" uid="uid://duyhp4h5f47lp" path="res://sprites/TamanhoTela/estrelasSprites/estrela_3.PNG" id="3_f4o8n"]
+[ext_resource type="Texture2D" uid="uid://by2s1gdqgsty" path="res://sprites/TamanhoTela/estrelasSprites/estrela_4.PNG" id="4_y18x1"]
+[ext_resource type="Texture2D" uid="uid://rd24x3yn3brv" path="res://sprites/TamanhoTela/estrelasSprites/estrela_5.PNG" id="5_vt15n"]
 [ext_resource type="Script" uid="uid://djin477r6lv5l" path="res://scripts/estrela.gd" id="6_6il1n"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1gg3y"]

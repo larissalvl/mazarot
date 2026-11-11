@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://by2s1gdqgsty"
-path="res://.godot/imported/estrela_4.PNG-151b3b0857af48b68e3161b2874812c7.ctex"
+uid="uid://duyhp4h5f47lp"
+path="res://.godot/imported/estrela_3.PNG-65dc9aac2d67fc33bc3dfd9ec76cece7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://estrelasSprites/estrela_4.PNG"
-dest_files=["res://.godot/imported/estrela_4.PNG-151b3b0857af48b68e3161b2874812c7.ctex"]
+source_file="res://sprites/TamanhoTela/estrelasSprites/estrela_3.PNG"
+dest_files=["res://.godot/imported/estrela_3.PNG-65dc9aac2d67fc33bc3dfd9ec76cece7.ctex"]
 
 [params]
 
