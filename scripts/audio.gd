@@ -5,3 +5,6 @@ func tocar_clique():
 
 func tocar_batida():
 	$SfxBatida.play()
+
+func tocar_explosao():
+	$SfxExplosao.play()

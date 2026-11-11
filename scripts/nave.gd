@@ -12,6 +12,8 @@ var vida_atual := vida_maxima
 var vivo := true
 signal vida_mudou
 
+var cena_explosao = preload("res://cenas/explosao.tscn")
+
 #separa nave do propulsor
 @onready var spriteFogo = $SpriteFogo
 @onready var spriteNave = $SpriteNave
@@ -36,6 +38,8 @@ func _ready():
 
 #função que roda a cada frame
 func _process(delta):
+	if not vivo:
+		return
 	if Input.is_action_pressed("Acelerar"):
 		vel_nave_atual = 700
 		vel_angular_atual = vel_angular_base * 2
@@ -75,12 +79,18 @@ func receber_dano(dano):
 	vida_atual = max(vida_atual, 0)
 	vida_mudou.emit()
 	if vida_atual <= 0:
-		morrer()
 		vivo = false
+		morrer()
 
 #função que recarrega a cena quando a nave morre
 func morrer():
+	var explosao = cena_explosao.instantiate()
+	get_tree().current_scene.add_child(explosao)
+	explosao.global_position = global_position
+	visible = false
+	$CollisionShape2D.set_deferred("disabled", true)
 	print("A nave morreu")
+	await explosao.tree_exited
 	get_tree().reload_current_scene()
 
 func balancar():

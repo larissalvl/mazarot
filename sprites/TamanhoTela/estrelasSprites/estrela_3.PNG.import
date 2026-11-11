@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duyhp4h5f47lp"
-path="res://.godot/imported/estrela_3.PNG-65dc9aac2d67fc33bc3dfd9ec76cece7.ctex"
+path="res://.godot/imported/estrela_3.PNG-91c453a408aa1a94a189359d98f1c3bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/TamanhoTela/estrelasSprites/estrela_3.PNG"
-dest_files=["res://.godot/imported/estrela_3.PNG-65dc9aac2d67fc33bc3dfd9ec76cece7.ctex"]
+source_file="res://sprites/TamanhoTela/EstrelasSprites/estrela_3.PNG"
+dest_files=["res://.godot/imported/estrela_3.PNG-91c453a408aa1a94a189359d98f1c3bf.ctex"]
 
 [params]
 
