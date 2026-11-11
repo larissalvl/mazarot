@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://6h2lls30xvlj"]
+
+[ext_resource type="AudioStream" uid="uid://cap34se5qiun1" path="res://audio/musica/MyVeryOwnDeadShip.ogg" id="1_qc0l7"]
+[ext_resource type="Script" uid="uid://dvuv5t6vh7t5b" path="res://scripts/audio.gd" id="1_w3v7g"]
+[ext_resource type="AudioStream" uid="uid://cy1s1ocx8kwx7" path="res://audio/sfx/sound_click.wav" id="3_2433u"]
+[ext_resource type="AudioStream" uid="uid://dd1xmk2d1l73" path="res://audio/sfx/flash_bang.wav" id="4_2433u"]
+
+[node name="Audio" type="Node" unique_id=59644393]
+process_mode = 3
+script = ExtResource("1_w3v7g")
+
+[node name="Musica" type="AudioStreamPlayer" parent="." unique_id=445062872]
+stream = ExtResource("1_qc0l7")
+autoplay = true
+
+[node name="SfxClique" type="AudioStreamPlayer" parent="." unique_id=2057091790]
+stream = ExtResource("3_2433u")
+
+[node name="SfxBatida" type="AudioStreamPlayer" parent="." unique_id=1749943078]
+stream = ExtResource("4_2433u")
+volume_db = -18.631

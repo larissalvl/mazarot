@@ -21,3 +21,10 @@ func _process(delta: float) -> void:
 	position += direcao * velocidade * delta
 	if position.distance_to(sol.position) < 2000.0 or position.distance_to(nave.position) > 1500.0:
 		queue_free()
+
+
+func _on_body_entered(body: Node2D) -> void:
+	Audio.tocar_batida()
+	nave.balancar()
+	nave.receber_dano(50)
+	queue_free()

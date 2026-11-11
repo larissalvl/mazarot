@@ -18,5 +18,6 @@ func _ready() -> void:
 	botao.pressed.connect(_on_botao_pressed)
 
 func _on_botao_pressed() -> void:
+	Audio.tocar_clique()
 	get_tree().set_pause(false)
 	queue_free()

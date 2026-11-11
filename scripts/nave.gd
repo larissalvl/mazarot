@@ -82,3 +82,10 @@ func receber_dano(dano):
 func morrer():
 	print("A nave morreu")
 	get_tree().reload_current_scene()
+
+func balancar():
+	var tween = create_tween()
+	tween.tween_property(spriteNave, "rotation", 0.3, 0.05)
+	tween.tween_property(spriteNave, "rotation", 0.0, 0.05)
+	tween.tween_property(spriteNave, "rotation", -0.3, 0.05)
+	tween.tween_property(spriteNave, "rotation", 0.0, 0.05)
