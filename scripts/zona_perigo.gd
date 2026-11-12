@@ -20,11 +20,11 @@ func _process(delta: float) -> void:
 		nave.receber_dano(dano_atual)
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group("jogador"):
+	if body.is_in_group("nave"):
 		print("Nave entrou na zona de perigo")
 		nave = body
 
 func _on_body_exited(body: Node2D) -> void:
-	if body.is_in_group("jogador"):
+	if body.is_in_group("nave"):
 		print("Nave saiu da zona de perigo")
 		nave = null
