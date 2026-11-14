@@ -17,10 +17,8 @@ func criar_asteroide():
 	var angulo = randf_range(0.0, TAU)
 	var direcao = Vector2.from_angle(angulo)
 	var raio = 700.0
-	var nave = get_tree().get_first_node_in_group("jogador")
-
+	var nave = get_tree().get_first_node_in_group("nave")
 	asteroide.position = nave.position + direcao * raio	
-	
 	add_child(asteroide)
 
 func _on_timer_timeout() -> void:

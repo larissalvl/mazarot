@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://dm2xdcuawoghc"]
+
+[ext_resource type="Script" uid="uid://ctdkylvvxxgog" path="res://scripts/explosao_asteroide.gd" id="1_mta4p"]
+[ext_resource type="Texture2D" uid="uid://dacnbu6rd5icf" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_01.png" id="2_mta4p"]
+[ext_resource type="Texture2D" uid="uid://cy2u6g5h0n6ut" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_02.png" id="3_f5c13"]
+[ext_resource type="Texture2D" uid="uid://che17yuwi68ty" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_03.png" id="4_0xqce"]
+[ext_resource type="Texture2D" uid="uid://deqx0fwxllhq7" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_04.png" id="5_o2cwn"]
+[ext_resource type="Texture2D" uid="uid://dsq3qbm7bn3ms" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_05.png" id="6_e4124"]
+[ext_resource type="Texture2D" uid="uid://ch2uacegbxf1h" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_06.png" id="7_eghkk"]
+[ext_resource type="Texture2D" uid="uid://d335xet0b34e5" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_07.png" id="8_2ynmv"]
+[ext_resource type="Texture2D" uid="uid://csu32mn4nuc1u" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_08.png" id="9_361mb"]
+[ext_resource type="Texture2D" uid="uid://gjkbjgjupw5h" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_09.png" id="10_f8y8h"]
+[ext_resource type="Texture2D" uid="uid://bj6oxvqmta163" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_10.png" id="11_k7xgl"]
+[ext_resource type="Texture2D" uid="uid://dmqss56i2wvo0" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_11.png" id="12_7qcxa"]
+[ext_resource type="Texture2D" uid="uid://cm7rxya0ubvuo" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_12.png" id="13_tf7pq"]
+[ext_resource type="Texture2D" uid="uid://c2i2tvcg67y8q" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_13.png" id="14_wp6eq"]
+[ext_resource type="Texture2D" uid="uid://dxb70ddv5r74l" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_14.png" id="15_5t6ck"]
+[ext_resource type="Texture2D" uid="uid://chn3tdqog0rtd" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_15.png" id="16_fuecc"]
+[ext_resource type="Texture2D" uid="uid://cqgu3odtstfpf" path="res://sprites/TamanhoTela/Explosao/explosãoAsteroide/explosion_16.png" id="17_2gxei"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ipkkl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mta4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f5c13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0xqce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_o2cwn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_e4124")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_eghkk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2ynmv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_361mb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_f8y8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_k7xgl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_7qcxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_tf7pq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_wp6eq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_5t6ck")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_fuecc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_2gxei")
+}],
+"loop": 0,
+"name": &"explosao",
+"speed": 20.0
+}]
+
+[node name="ExplosaoAsteroide" type="Node2D" unique_id=1651409154]
+script = ExtResource("1_mta4p")
+
+[node name="SpritesExplosao" type="AnimatedSprite2D" parent="." unique_id=529014068]
+scale = Vector2(1.2, 1.2)
+sprite_frames = SubResource("SpriteFrames_ipkkl")
+animation = &"explosao"
+
+[connection signal="animation_finished" from="SpritesExplosao" to="." method="_on_sprites_explosao_animation_finished"]

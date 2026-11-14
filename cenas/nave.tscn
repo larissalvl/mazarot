@@ -330,10 +330,9 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_ltewx"]
 radius = 15.0
 
-[node name="Nave" type="CharacterBody2D" unique_id=639437660 groups=["jogador"]]
+[node name="Nave" type="CharacterBody2D" unique_id=639437660 groups=["nave"]]
 position = Vector2(387, 188)
 script = ExtResource("1_env2g")
-metadata/_edit_group_ = true
 
 [node name="SpriteFogo" type="AnimatedSprite2D" parent="." unique_id=1231320679]
 position = Vector2(0.2000122, -0.7999878)
@@ -347,6 +346,26 @@ position = Vector2(0.2, -0.8)
 scale = Vector2(0.4, 0.4)
 sprite_frames = SubResource("SpriteFrames_es2mj")
 animation = &"NaveArmada"
+
+[node name="PontaDireita" type="Marker2D" parent="SpriteNave" unique_id=735456805]
+position = Vector2(51.999966, -52.99999)
+
+[node name="PontaEsquerda" type="Marker2D" parent="SpriteNave" unique_id=1516246571]
+position = Vector2(-45.500027, -52.99999)
+
+[node name="MeioDireita" type="Marker2D" parent="SpriteNave" unique_id=362056959]
+position = Vector2(39.499966, -32.99999)
+
+[node name="MeioEsquerda" type="Marker2D" parent="SpriteNave" unique_id=1260916562]
+position = Vector2(-35.500027, -32.99999)
+
+[node name="CentralDireita" type="Marker2D" parent="SpriteNave" unique_id=1951137381]
+position = Vector2(26.99997, -40.499992)
+scale = Vector2(0.9999998, 0.9999998)
+
+[node name="CentralEsquerda" type="Marker2D" parent="SpriteNave" unique_id=1319203672]
+position = Vector2(-20.50003, -40.499992)
+scale = Vector2(0.9999998, 0.9999998)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1492638287]
 position = Vector2(0.99998856, -2)

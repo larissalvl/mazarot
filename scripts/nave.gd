@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 #velocidade de nave
 var vel_nave_base = 350
+var vel_nave_rapida = 700
 var vel_nave_atual = vel_nave_base
 var vel_angular_base = PI/2
 var vel_angular_atual = vel_angular_base
@@ -12,7 +13,10 @@ var vida_atual := vida_maxima
 var vivo := true
 signal vida_mudou
 
-var cena_explosao = preload("res://cenas/explosao.tscn")
+var cena_explosao = preload("res://cenas/explosao_nave.tscn")
+
+var cena_bala = preload("res://cenas/bala.tscn")
+@onready var marca_balas = [$SpriteNave/PontaDireita, $SpriteNave/PontaEsquerda, $SpriteNave/MeioDireita, $SpriteNave/MeioEsquerda, $SpriteNave/CentralDireita, $SpriteNave/CentralEsquerda]
 
 #separa nave do propulsor
 @onready var spriteFogo = $SpriteFogo
@@ -41,7 +45,7 @@ func _process(delta):
 	if not vivo:
 		return
 	if Input.is_action_pressed("Acelerar"):
-		vel_nave_atual = 700
+		vel_nave_atual = vel_nave_rapida
 		vel_angular_atual = vel_angular_base * 2
 		spriteFogoAtual = spriteFogoRapido
 	else:
@@ -59,17 +63,28 @@ func _process(delta):
 		movNave = Vector2.UP.rotated(rotation) * vel_nave_atual
 		position += movNave * delta
 	if Input.is_action_just_pressed("Armar"):
-		armar()
+		if not spriteNave.is_playing():
+			armar()
+	if naveArmada and Input.is_action_just_pressed("Atirar"):
+		atirar()
 	spriteFogo.play(spriteFogoAtual)
 
 #função que diz como animação deve rodar
 func armar():
 	if not naveArmada:
 		spriteNave.play(spriteNaveArmada)
+		await spriteNave.animation_finished
 		naveArmada = true
 	else:
 		spriteNave.play_backwards(spriteNaveArmada)
 		naveArmada = false
+
+func atirar():
+	for m in marca_balas:
+		var bala = cena_bala.instantiate()
+		get_tree().current_scene.add_child(bala)
+		bala.global_position = m.global_position
+		bala.global_rotation = global_rotation
 
 #função que diminui a vida
 func receber_dano(dano):
@@ -89,7 +104,6 @@ func morrer():
 	explosao.global_position = global_position
 	visible = false
 	$CollisionShape2D.set_deferred("disabled", true)
-	print("A nave morreu")
 	await explosao.tree_exited
 	get_tree().reload_current_scene()
 

@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://bj8nq4pgr5qyx"]
+
+[ext_resource type="Script" uid="uid://ceex2mjxwyqdu" path="res://scripts/explosao_nave.gd" id="1_qcdy2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ipkkl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 0,
+"name": &"explosao",
+"speed": 20.0
+}]
+
+[node name="ExplosaoNave" type="Node2D" unique_id=1651409154]
+script = ExtResource("1_qcdy2")
+
+[node name="SpritesExplosao" type="AnimatedSprite2D" parent="." unique_id=529014068]
+scale = Vector2(1.2, 1.2)
+sprite_frames = SubResource("SpriteFrames_ipkkl")
+animation = &"explosao"
+frame = 3
+
+[connection signal="animation_finished" from="SpritesExplosao" to="." method="_on_sprites_explosao_animation_finished"]

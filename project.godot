@@ -24,11 +24,6 @@ Audio="*uid://6h2lls30xvlj"
 window/size/mode=3
 window/stretch/mode="canvas_items"
 
-[global_group]
-
-sol=""
-nave=""
-
 [input]
 
 ui_select={

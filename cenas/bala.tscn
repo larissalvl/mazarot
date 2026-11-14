@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://qkusawbr5mbg"]
+
+[ext_resource type="Script" uid="uid://b2uykw4klsute" path="res://scripts/bala.gd" id="1_fq3ty"]
+[ext_resource type="Texture2D" uid="uid://dpdq1pqpnq6ac" path="res://sprites/TamanhoTela/Tiros/fogo_01.png" id="1_j1eg4"]
+[ext_resource type="Texture2D" uid="uid://cmpb2o1cqhoo6" path="res://sprites/TamanhoTela/Tiros/fogo_02.png" id="2_fq3ty"]
+[ext_resource type="Texture2D" uid="uid://c0foor2cnoaq4" path="res://sprites/TamanhoTela/Tiros/fogo_03.png" id="3_1xpup"]
+[ext_resource type="Texture2D" uid="uid://cvbrc4dmfq0ic" path="res://sprites/TamanhoTela/Tiros/fogo_04.png" id="4_yx0jg"]
+[ext_resource type="Texture2D" uid="uid://dsbmbx10sk2f1" path="res://sprites/TamanhoTela/Tiros/fogo_05.png" id="5_jytma"]
+[ext_resource type="Texture2D" uid="uid://b1s0ytvdwaytk" path="res://sprites/TamanhoTela/Tiros/fogo_06.png" id="6_sxgey"]
+[ext_resource type="Texture2D" uid="uid://be65vkn42365o" path="res://sprites/TamanhoTela/Tiros/fogo_07.png" id="7_gg4cl"]
+[ext_resource type="Texture2D" uid="uid://bhl54purfp1ku" path="res://sprites/TamanhoTela/Tiros/fogo_08.png" id="8_inn10"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_es2mj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j1eg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fq3ty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1xpup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yx0jg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jytma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_sxgey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_gg4cl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_inn10")
+}],
+"loop": 0,
+"name": &"bala",
+"speed": 3.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qxpid"]
+radius = 47.010635
+
+[node name="Bala" type="Area2D" unique_id=1226536913 groups=["balas"]]
+scale = Vector2(0.1, 0.1)
+script = ExtResource("1_fq3ty")
+metadata/_edit_group_ = true
+
+[node name="SpritesBalas" type="AnimatedSprite2D" parent="." unique_id=1291727840]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_es2mj")
+animation = &"bala"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1802225678]
+position = Vector2(3, -25)
+shape = SubResource("CircleShape2D_qxpid")
+debug_color = Color(0.8765736, 0.00041738988, 0.8339862, 0.41960785)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1501303030]
+rect = Rect2(-35, -71, 73, 92)
+
+[connection signal="animation_finished" from="SpritesBalas" to="." method="_on_sprites_balas_animation_finished"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
